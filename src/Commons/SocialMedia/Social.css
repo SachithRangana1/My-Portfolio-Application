@@ -1,0 +1,14 @@
+.handles-container{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    
+}
+.handles-container .social-wrapper{
+    
+    display: inline;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    
+}

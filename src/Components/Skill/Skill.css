@@ -1,0 +1,38 @@
+.skills-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.section-header{
+    display: grid;
+    justify-content: center;
+
+    span{
+        display: grid;
+        justify-content: center;
+    }
+}
+.wrapper-skill{
+    margin-top: 40px;
+}
+.heading-1 .sub-head{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.heading-1 .gradient-text{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+@media (max-width: 540px){
+    .heading-1 .sub-head{
+        font-size: 12px;
+        
+    }
+    .heading-1 .gradient-text{
+        font-size: 20px;
+    
+    }
+}

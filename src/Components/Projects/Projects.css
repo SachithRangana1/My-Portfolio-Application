@@ -1,0 +1,155 @@
+/* #projects{
+    overflow: hidden;
+}
+#projects .projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,450px);
+    justify-content: center;
+    justify-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+
+#projects .projects-container .btn-toggle{
+    font-size: 40px;
+    margin-left: 1135px;
+    margin-top: -150px;
+    
+
+    button{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        }
+
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        }
+
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+@media (max-width: 1280px){
+    #projects .projects-container{
+        grid-template-columns: repeat(2,250px);
+        gap: 160px;
+        row-gap: 50px;
+    }
+}
+@media (max-width: 825px){
+    #projects .projects-container{
+        grid-template-columns: repeat(1,210px);
+        gap: 200px;
+        row-gap: 40px;
+    }
+} */
+
+#projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: center;
+    justify-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    position: relative; /* Set relative positioning for the container */
+}
+
+#projects .section-header .heading-1 .sub-text{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#projects .section-header .heading-1 .gradient-text{
+    font-size: 40px;
+    margin-bottom: -15px;
+}
+
+#projects .projects-container .btn-toggle {
+    grid-column: span 3; /* Ensure the toggle button spans all grid columns */
+    justify-self: center; /* Center align the button */
+    margin: -40px 0 0 0; /* Add margin for spacing */
+    position: relative; /* Ensure it stays within the container */
+    z-index: 10; /* Ensure it appears above other elements */
+    border-radius: 100px;
+    /* border: 1px solid grey; */
+    animation: pulse-glow 1s infinite;
+    background-color: #DEF4F6;
+
+
+
+    button {
+        width: 80px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(145, 21, 21, 0.2);
+        background-color: #DEF4F6;
+        animation: pulse-glow 1s infinite;
+
+    }
+}
+
+@keyframes pulse-glow {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        background-color: #DEF4F6;
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        background-color: #F5F3FB;
+
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        background-color: #DEF4F6;
+    }
+}
+
+@media (max-width: 1280px) {
+    #projects .projects-container {
+        grid-template-columns: repeat(2, 250px);
+        gap: 160px;
+        row-gap: 50px;
+    }
+
+    #projects .projects-container .btn-toggle {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 825px) {
+    #projects .projects-container {
+        grid-template-columns: repeat(1, 210px);
+        gap: 200px;
+        row-gap: 40px;
+    }
+
+    #projects .projects-container .btn-toggle {
+        grid-column: span 1;
+    }
+}
