@@ -5,6 +5,7 @@ import { FaUserGraduate } from "react-icons/fa";
 import me from "../../assets/img1.jpeg"
 import { MdOutlineExpandMore } from "react-icons/md";
 import { MdExpandLess } from "react-icons/md";
+import { FaAnglesDown, FaAnglesUp } from 'react-icons/fa6';
 
 
 const About: React.FC = () => {
@@ -64,7 +65,7 @@ const About: React.FC = () => {
                    in software development, I bring a unique perspective to the tech industry. My journey reflects my adaptability and eagerness
                     to learn, and I am excited to continue growing in the dynamic world of software engineering.
                   <button onClick={toggleText} className="toggle-button">
-                    < MdExpandLess/> 
+                  <FaAnglesUp />
                   </button>
                 </>
               ) : (
@@ -72,7 +73,7 @@ const About: React.FC = () => {
                   I graduated as a Mechanical Engineer from De Montfort University and initially began my career as an Executive 
                   Mechanical Engineer...
                   <button onClick={toggleText} className="toggle-button">
-                    <MdOutlineExpandMore />
+                  <FaAnglesDown />
                   </button>
                 </>
               )}

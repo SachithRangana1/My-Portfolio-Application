@@ -2,12 +2,32 @@ import React, { useState } from "react";
 import "./Projects.css";
 import { projects } from "../../Source";
 import ProjectCard from "./ProjectCard/ProjectCard";
-import { MdExpandLess, MdOutlineExpandMore } from "react-icons/md";
+import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
+import ProjectNavigation from "./ProjectNavigation/ProjectNavigation";
+
 
 const Projects: React.FC = () => {
   const [showMore, setShowMore] = useState(false);
-
-  const visibleProjects = showMore ? projects : projects.slice(0, 3);
+  const [activeProjects, setactiveProjects] = useState(projects);
+  
+  const getTabs = ()=>{
+    const tabs = ["All"];
+    projects.map((item)=>{
+      if(!tabs.includes(item.category)){
+        tabs.push(item.category);
+      }
+    });
+    return tabs;
+  }
+  const setProjects = (value:string)=> {
+    if (value === "All"){
+      setactiveProjects(showMore ? projects : projects.slice(0, 3));
+    }else{
+    const new_projects = projects.filter(item=> item.category === value);
+    setactiveProjects(showMore ? new_projects : new_projects.slice(0, 3));;
+    }
+  }
+  const visibleProjects = showMore ? activeProjects : activeProjects.slice(0, 3);
 
   return (
     <section id="projects">
@@ -18,13 +38,14 @@ const Projects: React.FC = () => {
             <h2 className="gradient-text">Projects</h2>
           </div>
         </div>
+        <ProjectNavigation tabs={getTabs()} onChange={setProjects}/>
         <div className="projects-container">
-          {visibleProjects.map((project, index) => (
+          {visibleProjects.map((project:any, index:number) => (
             <ProjectCard {...project} key={index} />
           ))}
           <div className="btn-toggle">
           <button onClick={()=> setShowMore(!showMore)}>
-            {!showMore ? <MdOutlineExpandMore />: < MdExpandLess/>}
+            {!showMore ? <FaAnglesDown />: <FaAnglesUp />}
           </button>
         </div>
         </div>

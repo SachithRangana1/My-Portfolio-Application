@@ -12,12 +12,8 @@ import { TfiEmail} from "react-icons/tfi";
 import { FaBootstrap, FaDocker, FaGithub,FaHtml5,FaJava,FaLinkedin,FaPaintBrush } from "react-icons/fa";
 import { CiMobile3 } from "react-icons/ci";
 import { TfiWrite } from 'react-icons/tfi'
-import {DiDocker, DiMysql, DiReact} from "react-icons/di";
-import {FaNodeJs} from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
-import {SiExpress,SiJquery,SiMongodb, SiMysql, SiPostgresql, SiSpringboot} from "react-icons/si";
-import { CgFigma } from "react-icons/cg";
-import { TbBrandReactNative } from "react-icons/tb";
+import {SiJquery, SiMysql, SiPostgresql, SiSpringboot} from "react-icons/si";
 import { PiAngularLogo } from "react-icons/pi";
 
 export const tabs = [
@@ -30,7 +26,7 @@ export const tabs = [
 export const whyChooseMe = [
   {
     title:"Unmatched Local Expertise",
-    icon:<GrUserExpert/>,
+    icon:<GrUserExpert />,
     link:"",
   },
   {
@@ -158,6 +154,7 @@ export const projects = [
   { 
     id:1,
     title: 'Income Expense Organizer Application',
+    category: "Web",
     image: './src/assets/Project-img/i&e.png',
     description: `Transforming education with AI, our School UI Design project revolutionizes the 
                      learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
@@ -191,6 +188,7 @@ export const projects = [
   {
     id:2,
     title: 'Breaking News Website Backend',
+    category: "Backend",
     image: './src/assets/Project-img/brn.png',
     description:`Enhance your online shopping experience with our E-Commerce Application 
       UI design project. Seamlessly blending aesthetics with functionality, our intuitive 
@@ -224,6 +222,7 @@ export const projects = [
   {
     id:3,
     title: 'Employee Management Application Frontend',
+    category: "Frontend",
     image: './src/assets/Project-img/emm.png',
     description: `Unlock the future of robotics with our Robotic Engineering Web Application
       project. Seamlessly integrating cutting-edge technology, data analytics, 
@@ -257,6 +256,7 @@ export const projects = [
   {
     id:4,
     title: 'To-Do List Application Frontend ',
+    category: "Frontend",
     image: './src/assets/Project-img/tda.png',
     description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
                      Elevate your project management experience and achieve success with ease.`,
@@ -287,6 +287,7 @@ export const projects = [
   {
     id:5,
     title: 'E-Commerce Platform Application Backend',
+    category: "Backend",
     image: './src/assets/Project-img/eca.png',
     description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
     demoLink: "https://github.com/SachithRangana1/E-Commerce-Platform-Application-Backend.git",
@@ -316,6 +317,7 @@ export const projects = [
   {
     id:6,
     title: 'Online Learning Platform Backend',
+    category: "Backend",
     image: './src/assets/Project-img/olf.png',
     description: `Elevate engagement and knowledge retention with our Quiz App 
                     Development project. Seamlessly crafted for interactive learning 
