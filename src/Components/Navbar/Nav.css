@@ -7,12 +7,18 @@
     top: 0;
     left: 0; 
     z-index: 100;
-    background: var(--bg-primary);   
+    background: var(--bg-primary);  
+    
+    .name{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
 }
 .navbar div .tabs-group{
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .navbar > div > .menu{
     color: var(--muted-foreground);
@@ -54,7 +60,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
 
@@ -78,20 +84,26 @@
         display: flex;
         justify-items: center;
         align-items: center;
-
-
+    }
+}
+@media (max-width:842px){
+    .navbar > div > div > .label{
+        font-size: 20px;
     }
 }
 
 @media (max-width:790px){
     .navbar > div > div > .label{
-        font-size: 25px;
+        font-size: 23px;
+    }
+    .navbar div .tabs-group{
+        font-size: 13px;
     }
 }
 
 @media (max-width:735px){
     .navbar > div > div > .label{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 /* @media (max-width:699px){

@@ -1,3 +1,7 @@
+#projects .section-header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
 #projects .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 450px);
@@ -6,17 +10,19 @@
     gap: 50px;
     margin-top: 40px;
     position: relative; 
+
 }
 
 #projects .section-header .heading-1 .sub-text{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
 }
 #projects .section-header .heading-1 .gradient-text{
     font-size: 40px;
+    font-weight: 900;
     margin-bottom: -15px;
 }
 

@@ -16,19 +16,7 @@ const Navbar: React.FC = () => {
                     <label className='label'>Sachith Rangana</label>
                 </div>
 
-            {/* <div className='box flex-center buttons'>
-                <Link 
-                to='contact'
-                smooth={true}
-                className='btn btn-success me-2 contact-btn'>Hire me!</Link>
-
-                <Link 
-                to='services'
-                smooth={true}
-                className='btn btn-light me-2 services-btn'>Services</Link>
-            </div> */}
-
-                <div className={`tabs-group sidebar ${openSidebar ? 'visible':''}`}>
+            <div className={`tabs-group sidebar ${openSidebar ? 'visible':''}`}>
                     
                     {openSidebar ? <div className='overlay' onClick={()=> setOpenSidebar(!openSidebar)}/> : " "}
                     

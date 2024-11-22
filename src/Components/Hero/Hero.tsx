@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
             <h3 className='heading-1 text-secondary fw-bolder'>Fullstack Web Developer</h3>
             <div className='btn-wrapper d-flex justify-content-center'>
               <Link to='download-cv' smooth={true} className='btn btn-outline-dark'>Download CV</Link>
-              <Link to='contact' smooth={true} className='btn btn-secondary'>Contact info</Link>
+              {/* <Link to='contact' smooth={true} className='btn btn-secondary'>Contact info</Link> */}
             </div>
             <div className='social-media'>
                <Social />

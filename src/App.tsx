@@ -5,9 +5,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/Hero/Hero';
 import Projects from './Components/Projects/Projects';
-import Skill from './Components/Skill/Skill';
-import Services from './Components/Services/Services';
-import Testimonials from './Components/Testimonials/Testimonials';
+import Skills from './Components/Skills/Skills';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -18,12 +16,10 @@ function App() {
       <Navbar/>
       <Hero />
       <About />
-      <Skill />
+      <Skills />
+      <Projects />
       <Contact />
       <Footer />
-      <Projects />
-      <Services />
-      <Testimonials />
     </>
   )
 }

@@ -3,8 +3,6 @@ import './About.css'
 import { GiAchievement } from "react-icons/gi";
 import { FaUserGraduate } from "react-icons/fa";
 import me from "../../assets/img1.jpeg"
-import { MdOutlineExpandMore } from "react-icons/md";
-import { MdExpandLess } from "react-icons/md";
 import { FaAnglesDown, FaAnglesUp } from 'react-icons/fa6';
 
 
@@ -50,7 +48,6 @@ const About: React.FC = () => {
                 </div>
                   <h3>Education</h3>
                   <span>B.Sc Bachelor Degree</span>
-                  {/* <span>Fullstack Development</span> */}
               </div>
             </div>
           </div>

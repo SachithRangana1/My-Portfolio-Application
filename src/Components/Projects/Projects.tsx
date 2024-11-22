@@ -23,8 +23,8 @@ const Projects: React.FC = () => {
     if (value === "All"){
       setactiveProjects(showMore ? projects : projects.slice(0, 3));
     }else{
-    const new_projects = projects.filter(item=> item.category === value);
-    setactiveProjects(showMore ? new_projects : new_projects.slice(0, 3));;
+      const new_projects = projects.filter(item=> item.category === value);
+      setactiveProjects(showMore ? new_projects : new_projects.slice(0, 3));;
     }
   }
   const visibleProjects = showMore ? activeProjects : activeProjects.slice(0, 3);
@@ -40,8 +40,8 @@ const Projects: React.FC = () => {
         </div>
         <ProjectNavigation tabs={getTabs()} onChange={setProjects}/>
         <div className="projects-container">
-          {visibleProjects.map((project:any, index:number) => (
-            <ProjectCard {...project} key={index} />
+          {visibleProjects.map((activeProjects:any, index:number) => (
+            <ProjectCard {...activeProjects} key={index} />
           ))}
           <div className="btn-toggle">
           <button onClick={()=> setShowMore(!showMore)}>

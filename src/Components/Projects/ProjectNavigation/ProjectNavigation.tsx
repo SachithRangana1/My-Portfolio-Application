@@ -11,6 +11,7 @@ const ProjectNavigation: React.FC<NavProps> = ({tabs, onChange}) => {
     const [offset, setOffset] = useState(0);
     const [indicatorWidth, setindicatorWidth] = useState(0);
     const itemEls = useRef<(HTMLButtonElement | null)[]>(new Array());
+
     const sumArray = (arr:number[]): number=> {
         let sum = 0;
         for (let i =0; i < arr.length; i++){
@@ -18,6 +19,7 @@ const ProjectNavigation: React.FC<NavProps> = ({tabs, onChange}) => {
         }
         return sum;
     }
+
     useEffect(()=>{
         const preElm = itemEls.current.filter((_, index)=> index < activeIndex);
         setOffset(

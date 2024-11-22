@@ -9,7 +9,7 @@ const Achivements: React.FC = () => {
 
     useEffect(()=>{
         const timeOutId = setTimeout(()=>{
-            setClients(500);
+            setClients(8);
             setExperience(1);
             setProjects(15);
         }, 3000)
@@ -21,7 +21,7 @@ const Achivements: React.FC = () => {
   return (
     <div className='achievements-container'>
         <div className="card">
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mt-3">
                 <Odometer value={experience} className='title' />
                 <h1 className='title'>+</h1>
             </div>
@@ -29,14 +29,14 @@ const Achivements: React.FC = () => {
         </div>
 
         <div className="card">
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mt-3">
                 <Odometer value={clients} className='title' />
             </div>
-            <p className='muted name'>Client</p>
+            <p className='muted name'>Programming languages</p>
         </div>
 
         <div className="card">
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mt-3">
                 <Odometer value={projects} className='title' />
                 <h1 className='title'>+</h1>
             </div>

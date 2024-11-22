@@ -1,12 +1,11 @@
 import React from 'react';
-import './Skill.css';
-import "./Skill.css"
+import './Skills.css';
 import { skills } from '../../Source';
 import SkillCard from './SkillCard/SkillCard';
 
 const Skill: React.FC = () => {
   return (
-    <section>
+    <section id='skills'>
       <div className="wrapper-skill">
         <div className="section-header">
           <h1 className="heading-1">

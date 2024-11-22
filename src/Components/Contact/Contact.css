@@ -1,0 +1,93 @@
+#contact .head{
+    display: grid;
+    justify-content: center;
+    margin: 100px 0 20px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+}
+#contact .head span{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+#contact .head h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+#contact .contact-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#contact .contact-options .option{
+    width: 30vw;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: solid 2px rgb(199, 198, 198);
+    transition: var(--transition);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#contact .contact-options .option:hover{
+    transform: scale(0.98);
+    background: rgb(226, 223, 223);
+}
+#contact .contact-options .option .icon-wrapper{
+    padding: 8px;
+    font-size: 25px;
+    background: transparent;
+    
+}
+#contact .contact-options .option:hover .icon-wrapper:first-child{
+    color: #efbafd;
+}
+
+#contact .contact-options .option .value{
+    font-size: 13px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .contact-options .option .muted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 430px){
+    #contact .contact-options .option{
+        width: 60vw;
+
+    }
+    #contact .contact-options{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    #contact .contact-options .option .value{
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 540px){
+    #contact .contact-options{
+        display: grid;    
+    }
+    #contact .contact-options .option{
+        width: 50vw;
+        
+    }
+}

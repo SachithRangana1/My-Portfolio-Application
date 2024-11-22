@@ -4,23 +4,21 @@ import client3 from "./assets/client-3.png";
 import client4 from "./assets/client-4.png";
 import client5 from "./assets/client-5.png";
 import { IoLogoCss3, IoLogoJavascript, IoMdAnalytics} from "react-icons/io";
-import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
-import { MdOutlineSupportAgent,MdOutlineAlternateEmail } from "react-icons/md";
+import { MdOutlineSupportAgent, MdEmail, MdPhoneInTalk } from "react-icons/md";
 import { RiExchange2Fill } from "react-icons/ri";
-import { TfiEmail} from "react-icons/tfi";
 import { FaBootstrap, FaDocker, FaGithub,FaHtml5,FaJava,FaLinkedin,FaPaintBrush } from "react-icons/fa";
-import { CiMobile3 } from "react-icons/ci";
 import { TfiWrite } from 'react-icons/tfi'
 import { FaLaptopCode } from "react-icons/fa";
 import {SiJquery, SiMysql, SiPostgresql, SiSpringboot} from "react-icons/si";
 import { PiAngularLogo } from "react-icons/pi";
+import { ImLocation } from "react-icons/im";
 
 export const tabs = [
     {name:"About Me",id:'about'},
-    {name:"Skill",id:'skill'},
+    {name:"Skill",id:'skills'},
     {name:"Projects",id:'projects'},
-    {name:"Services",id:'services'}
+    {name:"Contact",id:'contact'}
 ]
 
 export const whyChooseMe = [
@@ -342,6 +340,11 @@ export const projects = [
         icon: <SiMysql />,
         iconColor:"blue",
       },
+      {
+        name:"Docker",
+        icon: <FaDocker />,
+        iconColor:"blue",
+      },
     ]
   },
 ]
@@ -393,18 +396,21 @@ export const clients = [
 export const contactOptions = [
   {
     title:"Email",
-    value:"mradinuba@gmail.com",
-    icon:<MdOutlineAlternateEmail />,
+    value:"sachith2546@gmail.com",
+    icon:<MdEmail />
+    ,
   },
   {
     title:"Phone Number",
-    value:"+2348149121918",
-    icon:<IoCallOutline/>,
+    value:"071 9888 633",
+    icon:<MdPhoneInTalk />
+    ,
   },
   {
     title:"Address",
-    value:"Gwarinpa, Abuja, Nigeria",
-    icon:<IoLocationOutline/>,
+    value:"Malimbada, Matara, Sri Lanka",
+    icon:<ImLocation />
+    ,
   },
 ]
 
@@ -419,41 +425,24 @@ export const socialHandles = [
       icon:<FaLinkedin/>,
       link:"https://www.linkedin.com/in/sachith-rangana-302315132/",
     },
-    {
-      name:"Email",
-      icon:<TfiEmail/>,
-      link:"sachith2546@gmail.com",
-    },
-    {
-      name:"Mobile",
-      icon:<CiMobile3/>,
-      link:"078 8888 633",
-    },
 ];
 
 export const footer = [
-  {
-    title:"Explore",
-    routes:[
-      {name:"About Me",id:'about'},
-      {name:"Skill",id:'skill'},
-    ]
-  },
-  {
-      title:"Trusted",
-      routes:[
-        {name:"Services",id:'services'},
-        {name:"Projects",id:'projects'},
-        {name:"Testimonials",id:'testimonials'},
-      ]
-    },
-  {
-      title:"Others",
-      routes:[
-        {name:"Privacy Policy"},
-        {name:"Terms and Conditions"},
-        {name:"Cookie Policy"},
-      ]
-    },
+      {
+        name:"About Me", 
+        id:'about'
+      },
+      {
+        name:"Skills", 
+        id:'skills'
+      },
+      {
+        name:"Projects",
+        id:'projects'
+      },
+      {
+        name:"Contact",
+        id:'contact'
+      },
 ]
 
