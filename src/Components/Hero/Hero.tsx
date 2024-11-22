@@ -1,9 +1,9 @@
 import React from 'react';
 import './Hero.css';
-import {Link} from 'react-scroll';
 import me from '../../assets/image (25).jpeg'
 import Social from '../../Commons/SocialMedia/Social';
 import Achivements from '../../Commons/Achivements/Achivements';
+import CvFile from '../../assets/cv-file/sachith-rangana-cv.pdf'
 
 const Hero: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             <span className='primary'>Sachith Rangana</span>
             <h3 className='heading-1 text-secondary fw-bolder'>Fullstack Web Developer</h3>
             <div className='btn-wrapper d-flex justify-content-center'>
-              <Link to='download-cv' smooth={true} className='btn btn-outline-dark'>Download CV</Link>
+              <a href={CvFile} download="./src/assets/cv-file/sachith-rangana-cv.pdf" target='-blank' smooth={true} className='btn btn-outline-dark'>Download CV</a>
               {/* <Link to='contact' smooth={true} className='btn btn-secondary'>Contact info</Link> */}
             </div>
             <div className='social-media'>
