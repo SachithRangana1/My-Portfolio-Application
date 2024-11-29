@@ -1,14 +1,12 @@
 # My Portfolio
 
-<p align="center">
-  <img src="login-ui/src/assets/git/1.png" alt="Login App Screenshot" width="300">
-</p>
-<p align="center">
-  <img src="login-ui/src/assets/git/2.png" alt="Login App Screenshot" width="300">
-</p>
-<p align="center">
-  <img src="login-ui/src/assets/git/3.png" alt="Login App Screenshot" width="300">
-</p>
+<div display="flex">
+  <p align="center">
+    <img src="src/assets/git/1.png" alt="Login App Screenshot" width="350">
+    <img src="src/assets/git/2.png" alt="Login App Screenshot" width="350">
+    <img src="src/assets/git/3.png" alt="Login App Screenshot" width="350">
+  </p>
+</div>
 
 This is my personal portfolio website created using React, TypeScript, and Vite. It showcases my projects, skills, and experience.
 
